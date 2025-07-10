@@ -1,6 +1,4 @@
 
-![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FDarshan82775%2Ftodo-list-app-html-css-js&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&title=visits&edge_flat=false)
-
 
 
 # 📝 To-Do List Web App
