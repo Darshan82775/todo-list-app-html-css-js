@@ -1,13 +1,24 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>to-do-app</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<h1>my to-do list</h1>
-<input type="text" placeholder="Enter a task" id="taskInput">
-<button onclick="addTask()">ADD TASK</button>
-<ul id="taskList"></ul>
-<script src="script.js"></script>
-</body></html>
+
+  <div class="container">
+    <h1>📝 Smart To-Do List <span class="creator">- Darshan R</span></h1>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <button onclick="addTask()">➕ Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
