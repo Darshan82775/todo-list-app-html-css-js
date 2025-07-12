@@ -1,33 +1,106 @@
-body{font-family: Arial, sans-serif;
-background-color: #f4f4f4;
-text-align: center;
-padding-top: 50px;}
-h1{color: #333;}
-input{padding: 10px;
-width:250px;}
-button{
-    padding:10px 20px;
-    background-color: #008CBA;
-color: white;
-border: none;
-cursor: pointer;
-margin-left: 10px;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
-ul{
-    list-style: none;
-    padding: 0;
-margin-top: 20px;
+
+/* Body */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-li{
-    background-color: #fff;
-    padding: 10px;
-    margin: 5px auto;
-    width:300px;
-    display:flex;
-    justify-content: space-between;
-    box-shadow: 0 0 5px gray;
+
+/* Main Container */
+.container {
+  background-color: #ffffff10;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  color: white;
 }
-.completed{
-    text-decoration: line-through;
-    color: grey;
+
+/* Heading */
+.container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
 }
+
+.creator {
+  font-size: 14px;
+  color: #ffcc00;
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.input-area button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.input-area button:hover {
+  background-color: #e91e63;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#taskList li {
+  background-color: #ffffff15;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 0 5px #000;
+}
+
+#taskList li.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+#taskList li button {
+  background-color: transparent;
+  border: none;
+  color: #ff4444;
+  font-size: 20px;
+  cursor: pointer;
+}
+
